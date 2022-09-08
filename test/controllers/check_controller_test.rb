@@ -1,4 +1,6 @@
-require 'test_helper'
+# frozen_string_literal: true
+
+require "test_helper"
 
 class CheckControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
@@ -6,6 +8,4 @@ class CheckControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Home | TweetChecker"
   end
-
 end
-
