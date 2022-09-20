@@ -11,21 +11,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">TweetChecker</a>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-          <li><%= link_to "Home",   '#',class:"nav-link active" %></li>
-          </li>
-        </ul>
-      </div>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><%= link_to "Login", '#',class:"nav-link active"%></li>
-      </ul>
-    </div>
-  </nav>
+<%= render 'layouts/navbar' %>
   <%= yield %>
 </body>
 
