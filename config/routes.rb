@@ -2,8 +2,7 @@
 
 Rails.application.routes.draw do
   devise_for :users
-  root "check_pages#home"
-  get "sessions/new"
-  get "/login",   to: "sessions#new"
   get "/signup", to: "users#new"
+  get "/users/sign_out" => "devise/sessions#destroy"
+  root "check_pages#home"
 end
