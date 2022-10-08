@@ -12,6 +12,8 @@ gem "rails",      "6.0.4"
 gem "sass-rails", "5.1.0"
 gem "turbolinks", "5.2.0"
 gem "webpacker",  "4.0.7"
+gem "devise"
+gem "rails-i18n"
 
 group :development, :test do
   gem "byebug",  "11.0.1", platforms: %i[mri mingw x64_mingw]
