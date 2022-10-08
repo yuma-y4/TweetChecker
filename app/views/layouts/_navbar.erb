@@ -10,7 +10,7 @@
     </div>
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <% if user_signed_in? %>
-      <li class="nav-item"><%= link_to "Logout", destroy_user_session_path, method: :delete ,class:"nav-link active"%></li>
+      <li class="nav-item"><%= link_to "Logout", destroy_user_session_path, method: :get %></li>
       <% else %>
       <li class="nav-item"><%= link_to "Login", ' /users/sign_in',class:"nav-link active"%></li>
       <% end %>
